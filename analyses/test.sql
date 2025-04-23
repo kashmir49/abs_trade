@@ -1,0 +1,1 @@
+select * from abs_trade.staging.stg_merchandise_exports
