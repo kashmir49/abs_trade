@@ -1,1 +1,1 @@
-select * from abs_trade.staging.stg_merchandise_exports
+select * from abs_trade.mart.fact_merchandise_exports

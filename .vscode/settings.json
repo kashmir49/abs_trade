@@ -1,5 +1,6 @@
 {
     "dbt.enableNewLineagePanel": true,
     "dbt.queryLimit": 50,
-    "dbt.perspectiveTheme": "Vintage"
+    "dbt.perspectiveTheme": "Vintage",
+    "dbmlERDPreviewer.preferredTheme": "dark"
 }

@@ -1,4 +1,4 @@
-{{ config ( schema ='mart') }}
+{{ config ( schema ='mart')}}
 {{ fact_table(
     table_name='merchandise_exports',
     date_column = 'Month_Year',
