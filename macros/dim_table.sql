@@ -1,3 +1,4 @@
+-- This macro generates a dimension table from a source table by unpivoting it and transforming the field names.
 {% macro dim_table(table_name, date_column, new_column_name) %}
     with unpivoted as (
         {{

@@ -21,5 +21,5 @@ sources:
         description: "This table contains the merchandise export data by industry from the ABS."
       - name: merchandise_imports_by_industry
         description: "This table contains the merchandise import data by industry from the ABS."
-      - name: merchandise_exports_1
       - name: goods
+        description: "This table contains the goods data from the ABS."

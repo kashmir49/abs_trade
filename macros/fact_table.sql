@@ -1,3 +1,4 @@
+-- This macro generates a fact table by unpivoting the specified columns from the source table.
 {% macro fact_table(table_name, date_column, new_column_name) %}
     with unpivoted as (
         {{
