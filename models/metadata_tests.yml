@@ -1,3 +1,4 @@
+version: 2
 models:
 # Table: Fact Merchandise Exports
   - name: fact_merchandise_exports
@@ -461,12 +462,22 @@ models:
               config:
                 severity: error
                 message: The goods_key must be unique and not null.
-      - name: goods
-        description: "The name of the goods."
+      - name: goods_sub_category
+        description: "The category of the goods."
         data_type: text
         tests:
           - not_null
           - unique
+      - name: goods_category
+        description: "The sub-category of the goods."
+        data_type: text
+        tests:
+          - not_null
+      - name: goods_category_key
+        description: "The identifier for the goods category."
+        data_type: text
+        tests:
+          - not_null
 
 # Table: Dim Industry
   - name: dim_industry
@@ -497,7 +508,7 @@ models:
     config:
       contract: { enforced: true }
     columns:
-      - name: date_key
+      - name: Date_Key
         description: "The primary key for the table."
         data_type: integer
         tests:
@@ -507,28 +518,28 @@ models:
               config:
                 severity: error
                 message: The date_key must be unique and not null.
-      - name: date
+      - name: Date
         description: "The date."
         data_type: date
         tests:
           - not_null
           - unique
-      - name: year
+      - name: Year
         description: "The year."
         data_type: integer
         tests:
           - not_null
-      - name: month
+      - name: Month
         description: "The month."
         data_type: integer
         tests:
           - not_null
-      - name: day
+      - name: Day
         description: "The day."
         data_type: integer
         tests:
           - not_null
-      - name: quarter
+      - name: Quarter
         description: "The quarter."
         data_type: integer
         tests:

@@ -11,7 +11,7 @@
         select
             distinct
             {{ dbt_utils.generate_surrogate_key(['Field_Name']) }} as {{new_column_name~ '_Key'}},
-            Field_Name as {{new_column_name}}
+            INITCAP(REPLACE(Field_Name, '_', ' ')) as {{new_column_name}}
         from unpivoted
         where lower(Field_Name) != 'total'
     )
