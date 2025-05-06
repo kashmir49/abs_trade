@@ -14,3 +14,9 @@
             new_column_name='Industry'
         ) }}
     )
+    union
+    select
+        {{ dbt_utils.generate_surrogate_key(['Industry']) }} as industry_key,
+        Industry
+    from 
+     (select 'Not Available' as Industry)
