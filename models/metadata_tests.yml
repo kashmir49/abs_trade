@@ -557,3 +557,19 @@ models:
         data_type: text
         tests:
           - not_null
+      - name: Fiscal_Year
+        description: "The fiscal year."
+        data_type: integer
+        tests:
+          - not_null
+      - name: Fiscal_Quarter
+        description: "The fiscal quarter."
+        data_type: integer
+        tests:
+          - not_null
+      - name: Fiscal_Month
+        description: "The fiscal month."
+        data_type: integer
+        tests:
+          - not_null
+      
